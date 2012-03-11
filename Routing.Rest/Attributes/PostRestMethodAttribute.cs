@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Routing.Rest.Routing;
+using Routing.Web.Attributes;
 using Routing.Web.Configuration;
-using Routing.Web.Routing;
 
-namespace Routing.Web.Attributes
+namespace Routing.Rest.Attributes
 {
 	[AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
 	public class PostRestMethodAttribute : RestfullRoutingAttribute

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Routing.Web.Configuration;
-using Routing.Web.Routing;
+using Routing.Rest.Common;
+using Routing.Rest.Routing;
 
-namespace Routing.Web.Attributes
+namespace Routing.Rest.Attributes
 {
 	[AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
 	public class AreaRootControllerAttribute: RestfullRoutingAttribute

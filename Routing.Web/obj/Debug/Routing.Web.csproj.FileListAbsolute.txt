@@ -10,3 +10,5 @@ D:\projects\RoutingAttributes\Routing.Web\bin\Routing.Web.pdb
 D:\projects\RoutingAttributes\Routing.Web\obj\Debug\Routing.Web.csprojResolveAssemblyReference.cache
 D:\projects\RoutingAttributes\Routing.Web\obj\Debug\Routing.Web.dll
 D:\projects\RoutingAttributes\Routing.Web\obj\Debug\Routing.Web.pdb
+D:\projects\RoutingAttributes\Routing.Web\bin\Routing.Rest.dll
+D:\projects\RoutingAttributes\Routing.Web\bin\Routing.Rest.pdb

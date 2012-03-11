@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
-namespace Routing.Web.Routing
+namespace Routing.Rest.Routing
 {
 
     [Serializable]

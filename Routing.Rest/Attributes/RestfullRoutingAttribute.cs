@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
+using Routing.Rest.Routing;
 using Routing.Web.Configuration;
-using Routing.Web.Routing;
 
-namespace Routing.Web.Attributes
+namespace Routing.Rest.Attributes
 {
 	public abstract class RestfullRoutingAttribute : Attribute
 	{

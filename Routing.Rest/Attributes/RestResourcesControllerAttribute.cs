@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Routing.Rest;
+using Routing.Rest.Attributes;
+using Routing.Rest.Routing;
 using Routing.Web.Configuration;
-using Routing.Web.Routing;
 
 namespace Routing.Web.Attributes
 {

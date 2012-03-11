@@ -1,6 +1,6 @@
 using System.Web.Routing;
 
-namespace Routing.Web.Routing
+namespace Routing.Rest.Routing
 {
     public class RouteParam
     {

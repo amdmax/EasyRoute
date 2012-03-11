@@ -1,9 +1,9 @@
-using System;
 using System.Collections.Generic;
-using Routing.Web.Attributes;
-using Routing.Web.Routing;
+using Routing.Rest.Attributes;
+using Routing.Rest.Common;
+using Routing.Web.Configuration;
 
-namespace Routing.Web.Configuration
+namespace Routing.Rest
 {
 	public class ControllerTypesList:List<ControllerWithAttr>
 	{

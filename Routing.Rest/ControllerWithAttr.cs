@@ -1,4 +1,5 @@
 using System;
+using Routing.Rest.Attributes;
 using Routing.Web.Attributes;
 
 namespace Routing.Web.Configuration

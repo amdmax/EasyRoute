@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using Routing.Rest.Common;
 
-namespace Routing.Web.Routing
+namespace Routing.Rest.Routing
 {
     public static class CollectionExtensions
     {

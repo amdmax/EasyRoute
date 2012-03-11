@@ -1,6 +1,6 @@
 using System;
 
-namespace Routing.Web.Routing
+namespace Routing.Rest.Common
 {
     public static class Guard
     {

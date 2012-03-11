@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
+using Routing.Rest.Routing;
 using Routing.Web.Attributes;
-using Routing.Web.Routing;
 
 namespace Routing.Web.Controllers
 {

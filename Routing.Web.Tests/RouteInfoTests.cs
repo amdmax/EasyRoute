@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using NUnit.Framework;
-using Routing.Web.Routing;
+using Routing.Rest.Routing;
 
 namespace Routing.Web.Tests
 {

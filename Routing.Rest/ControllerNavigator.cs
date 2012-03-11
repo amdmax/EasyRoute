@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Routing.Rest.Attributes;
+using Routing.Rest.Routing;
 using Routing.Web.Attributes;
-using Routing.Web.Routing;
+using Routing.Web.Configuration;
 
-namespace Routing.Web.Configuration
+namespace Routing.Rest
 {
     // TODO: move this to standalone assembly
 	public class ControllerNavigator
