@@ -46,8 +46,8 @@
     <Compile Include="Attributes\AreaRootControllerAttribute.cs" />
     <Compile Include="Attributes\GetRestMethodAttribute.cs" />
     <Compile Include="Attributes\PostRestMethodAttribute.cs" />
-    <Compile Include="Attributes\RestfullRoutingAttribute.cs" />
-    <Compile Include="Attributes\RestResourcesControllerAttribute.cs" />
+    <Compile Include="Attributes\RestRoutingAttribute.cs" />
+    <Compile Include="Attributes\RestResourcesAttribute.cs" />
     <Compile Include="Attributes\RootControllerAttribute.cs" />
     <Compile Include="Common\Guard.cs" />
     <Compile Include="ControllerNavigator.cs" />

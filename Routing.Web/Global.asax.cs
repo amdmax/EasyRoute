@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Routing.Rest.Routing;
 
 namespace Routing.Web
 {
@@ -31,10 +32,10 @@ namespace Routing.Web
 
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
+            RouteTable.Routes.RegisterRestControllers();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
-            RegisterRoutes(RouteTable.Routes);
+            
         }
     }
 }

@@ -1,4 +1,4 @@
-using Routing.Web.Attributes;
+using Routing.Rest.Attributes;
 
 namespace Routing.Web.Tests
 {
@@ -17,12 +17,12 @@ namespace Routing.Web.Tests
 	{
 	}
 
-	[RestResourcesController(typeof (TestRootController))]
+	[RestResources(typeof(TestChildAController), typeof (TestRootController))]
 	public class TestChildAController : TestController
 	{
 	}
 
-	[RestResourcesController(typeof (TestRootController))]
+    [RestResources(typeof(TestChildBController), typeof(TestRootController))]
 	public class TestChildBController : TestController
 	{
 	}

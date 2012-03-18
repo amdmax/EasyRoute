@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Routing.Rest.Routing;
-using Routing.Web.Attributes;
 using Routing.Web.Configuration;
 
 namespace Routing.Rest.Attributes
 {
 	[AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
-	public class PostRestMethodAttribute : RestfullRoutingAttribute
+	public class PostRestMethodAttribute : RestRoutingAttribute
 	{
 		public override int Priority
 		{
@@ -18,5 +17,15 @@ namespace Routing.Rest.Attributes
 		{
 			return null;
 		}
+
+	    public override string GetRouteUrl()
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    public override object GetDefaults()
+	    {
+	        throw new NotImplementedException();
+	    }
 	}
 }

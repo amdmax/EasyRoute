@@ -6,7 +6,7 @@ using Routing.Rest.Routing;
 namespace Routing.Rest.Attributes
 {
 	[AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
-	public class AreaRootControllerAttribute: RestfullRoutingAttribute
+	public class AreaRootControllerAttribute: RestRoutingAttribute
 	{
 		public AreaRootControllerAttribute(string name)
 		{
@@ -31,5 +31,15 @@ namespace Routing.Rest.Attributes
 			return collection;
 
 		}
+
+	    public override string GetRouteUrl()
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    public override object GetDefaults()
+	    {
+	        throw new NotImplementedException();
+	    }
 	}
 }

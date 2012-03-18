@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using Routing.Rest.Attributes;
 using Routing.Rest.Routing;
-using Routing.Web.Attributes;
 using Routing.Web.Configuration;
 
 namespace Routing.Rest
@@ -50,7 +49,7 @@ namespace Routing.Rest
 			// O(n^2)
 			foreach (var controller in controllers)
 			{
-				foreach (RestfullRoutingAttribute controllerCustomAttribute in controller.GetCustomAttributes(typeof (RestfullRoutingAttribute), false))
+				foreach (RestRoutingAttribute controllerCustomAttribute in controller.GetCustomAttributes(typeof (RestRoutingAttribute), false))
 				{
 					var key = controllerCustomAttribute.GetType();
 					var value = new ControllerWithAttr(controllerCustomAttribute, controller);

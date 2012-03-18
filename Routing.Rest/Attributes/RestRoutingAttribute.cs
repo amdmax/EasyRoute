@@ -8,8 +8,15 @@ using Routing.Web.Configuration;
 
 namespace Routing.Rest.Attributes
 {
-	public abstract class RestfullRoutingAttribute : Attribute
-	{
+    /// <summary>
+    /// This attribute is to represent base attribute for RestRouting solution
+    /// </summary>
+	public abstract class RestRoutingAttribute : Attribute
+    {
+        protected static readonly object _defaults = new object();
+
+        protected Type _controllerType;
+        public Type ControllerType { get { return _controllerType; } }
 		public virtual bool IsRoot()
 		{
 			return false;
@@ -33,5 +40,9 @@ namespace Routing.Rest.Attributes
 			}
 			return new List<RouteInfo>();
 		}
-	}
+
+        public abstract string GetRouteUrl();
+
+        public abstract object GetDefaults();
+    }
 }

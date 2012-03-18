@@ -41,7 +41,7 @@ namespace Routing.Web.Tests
         public void GetRouteNameTest()
         {
 
-            _controller = "Controller";
+            _controller = "_controllerType";
             _action = "Action";
             _area = "Area";
             RouteInfo info = new RouteInfo(_area) { Controller = _controller, Action = _action };
@@ -56,7 +56,7 @@ namespace Routing.Web.Tests
         [Test]
         public void AssertChildAreaIsParentArea()
         {
-            _controller = "Controller";
+            _controller = "_controllerType";
             _action = "Action";
             _area = "Area";
             RouteInfo info = new RouteInfo(_area) { Controller = _controller, Action = _action };

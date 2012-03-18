@@ -5,7 +5,6 @@ using System.Reflection;
 using NUnit.Framework;
 using Routing.Rest;
 using Routing.Rest.Attributes;
-using Routing.Web.Attributes;
 using Routing.Web.Configuration;
 using Routing.Web.TestHierarchy;
 using Routing.Web.Tests;
@@ -35,12 +34,12 @@ namespace Routing.Web.TestHierarchy
     {
     }
 
-    [RestResourcesController(typeof (Area1Controller))]
+    [RestResources(typeof(Resources2Controller), typeof(Area1Controller))]
     public class ResourcesController : TestController
     {
     }
 
-    [RestResourcesController(typeof (RootController))]
+    [RestResources(typeof(Resources2Controller), typeof (RootController))]
     public class Resources2Controller : TestController
     {
     }

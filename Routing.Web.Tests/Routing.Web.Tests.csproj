@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,6 +54,7 @@
     <Compile Include="ControllerNavigatorTests.cs" />
     <Compile Include="RouteInfoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoutesRegistrationTests.cs" />
     <Compile Include="TestController.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,10 +64,6 @@
     <ProjectReference Include="..\Routing.Rest\Routing.Rest.csproj">
       <Project>{D61792B0-E3AD-449C-8AC4-02D723DC0932}</Project>
       <Name>Routing.Rest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Routing.Web\Routing.Web.csproj">
-      <Project>{577677B5-C3B2-4721-B508-047A39A6B9BC}</Project>
-      <Name>Routing.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

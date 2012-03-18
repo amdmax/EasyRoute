@@ -1,16 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Routing.Rest;
-using Routing.Rest.Attributes;
 using Routing.Rest.Common;
 using Routing.Rest.Routing;
-using Routing.Web.Configuration;
 
-namespace Routing.Web.Attributes
+namespace Routing.Rest.Attributes
 {
 	[AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
-	public class RootControllerAttribute : RestfullRoutingAttribute
+	public class RootControllerAttribute : RestRoutingAttribute
 	{
 		public override bool IsRoot()
 		{
@@ -33,5 +30,15 @@ namespace Routing.Web.Attributes
 
 			return collection;
 		}
+
+	    public override string GetRouteUrl()
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    public override object GetDefaults()
+	    {
+	        throw new NotImplementedException();
+	    }
 	}
 }

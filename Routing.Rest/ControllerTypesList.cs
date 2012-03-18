@@ -7,12 +7,12 @@ namespace Routing.Rest
 {
 	public class ControllerTypesList:List<ControllerWithAttr>
 	{
-		public ControllerTypesList(RestfullRoutingAttribute attribute)
+		public ControllerTypesList(RestRoutingAttribute attribute)
 		{
 			Guard.ThrowIfNull(attribute, "attribute");
 			Attribute = attribute;
 		}
 
-		public RestfullRoutingAttribute Attribute { get; protected set; }
+		public RestRoutingAttribute Attribute { get; protected set; }
 	}
 }
